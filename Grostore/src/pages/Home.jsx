@@ -134,7 +134,11 @@ export default function Home() {
           spaceBetween={30}
           pagination={{ clickable: true }}
           // mousewheel={true}
-          modules={[Pagination]}
+          modules={[Pagination ,Autoplay]}
+            autoplay={{
+             delay: 2500,
+           disableOnInteraction: false
+         }}
           className="mySwiper"
           speed={800}
           breakpoints={{
@@ -947,10 +951,9 @@ export default function Home() {
             slidesPerView={1}
             loop={true}
             autoplay={{
-              delay: 0,
-              disableOnInteraction: false,
+           disableOnInteraction: false,
             }}
-            speed={2000}
+            speed={800}
             className="testimonial-swiper"
           >
             {[1, 2, 3, 4].map((item, index) => (
@@ -965,9 +968,8 @@ export default function Home() {
 
                   {/* Testimonial Text */}
                   <p>
-                    “Distinctively unleash business technologies without backend
-                    metrics. Conveniently network distributed core
-                    competencies.”
+                    "Amazing quality products! Fresh groceries are delivered on time, every time. The service is excellent and very customer-friendly. 
+                    I love the variety and the organic freshness of the products. Highly recommended for anyone looking for reliable and top-quality groceries."
                   </p>
 
                   <h5>Rasmus Geisler</h5>
@@ -1153,7 +1155,7 @@ export default function Home() {
                 <div className="post-content">
                   <div className="post-meta">
                     <span>Organic Vegetable</span>
-                    <span>May 24, 2022</span>
+                    <span>March 24, 2026</span>
                   </div>
 
                   <h4>Holiday Home Delivery We have Recently Ordered</h4>
@@ -1180,7 +1182,7 @@ export default function Home() {
                 <div className="post-content">
                   <div className="post-meta">
                     <span>Organic Vegetable</span>
-                    <span>May 24, 2022</span>
+                    <span>March 24, 2026</span>
                   </div>
 
                   <h4>Holiday Home Delivery We have Recently Ordered</h4>
@@ -1207,7 +1209,7 @@ export default function Home() {
                 <div className="post-content">
                   <div className="post-meta">
                     <span>Organic Vegetable</span>
-                    <span>May 24, 2022</span>
+                    <span>March 24, 2026</span>
                   </div>
 
                   <h4>Holiday Home Delivery We have Recently Ordered</h4>

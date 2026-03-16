@@ -187,7 +187,7 @@ function Navbar() {
             <li className="dropdown">
               Blog ▾
               <div className="dropdown-menu-custom">
-                <Link to="#">Blog Grid</Link>
+                <Link to="/blog">Blog Grid</Link>
                 <Link to="#">Blog List</Link>
                 <Link to="#">Blog Details</Link>
               </div>
@@ -197,7 +197,7 @@ function Navbar() {
               Pages ▾
               <div className="dropdown-menu-custom">
                 <div className="drop">
-                  <Link to="#">About us</Link>
+                  <Link to="/about">About us</Link>
                   <Link to="#">Services Details</Link>
                   <Link to="#">Cart</Link>
                   <Link to="#">Checkout</Link>
@@ -209,7 +209,7 @@ function Navbar() {
                 </div>
                 <div className="drop">
                   <Link to="#">Services</Link>
-                  <Link to="#">My Account</Link>
+                  <Link to="/myaccount">My Account</Link>
                   <Link to="#">Wishlist</Link>
                   <Link to="#">Invoice</Link>
                   <Link to="#">Team</Link>
@@ -226,7 +226,7 @@ function Navbar() {
             <div className="user-dropdown-container">
               <CiUser className="icons mx-4" />
               <div className="user-menu-custom fs-4 ">
-                <Link to="/account">
+                <Link to="/myaccount">
                   <FaUser className="me-2 text-semi-bold" /> My Account
                 </Link>
                 <Link to="/cart">

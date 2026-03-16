@@ -2960,7 +2960,6 @@ body {
     text-align: center;
     padding: 25px;
   }
-
   .stat-box {
     flex-direction: column;
     text-align: center;
@@ -3011,4 +3010,674 @@ body {
   .view {
     cursor: pointer;
   }
+}
+.containershop h1{
+  position: relative;
+  top:30px;
+  size:25px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.containershop p {
+  position: relative;
+  top: 40px;
+ font-size: 18px;
+  color: #555;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.containershop span {
+  font-weight: 600;
+  color: #ff6b00; /* active page color */
+}
+
+.about-header{
+background:#eaf5ea;
+}
+
+.mission-box{
+background:#f5f5f5;
+border-radius:10px;
+}
+
+.brand-img{
+opacity:0.6;
+transition:0.3s;
+}
+
+.brand-img:hover{
+opacity:1;
+}
+
+.stats{
+background:#eef6ee;
+}
+
+.stat-box{
+background:white;
+padding:20px;
+border-radius:8px;
+margin:10px;
+}
+
+.team-card{
+background:#f6f6f6;
+padding:25px;
+border-radius:10px;
+}
+
+
+.offerss{
+background-image: url("/images/cta-banner.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+width: 80%;
+position: relative;
+left:95px;
+
+}
+
+.offer h3{
+color:black;
+font-size:16px;
+font-weight:700;
+position: relative;
+left:20px
+}
+.offer h4{
+  color:#e74c3c;
+  size: 18px;
+}
+.brand-slider{
+overflow:hidden;
+position:relative;
+}
+
+.brand-track{
+display:flex;
+gap:60px;
+animation: scrollBrand 35s linear infinite;
+}
+
+.brand-track img{
+height:50px;
+size:50px;
+opacity:0.6;
+}
+
+@keyframes scrollBrand{
+0%{
+transform:translateX(100%);
+}
+100%{
+transform:translateX(-100%);
+}
+}
+.about-header{
+background:#eaf5ea;
+}
+
+.mission-box{
+background:#f5f5f5;
+border-radius:10px;
+}
+
+.brand-img{
+opacity:0.6;
+transition:0.3s;
+}
+
+.brand-img:hover{
+opacity:1;
+}
+
+.stats{
+background:#eef6ee;
+}
+
+.stat-box{
+background:white;
+padding:20px;
+border-radius:8px;
+margin:10px;
+}
+
+.team-card{
+background:#f6f6f6;
+padding:25px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+/* OFFER BANNER */
+
+.offerss{
+background-image:url("/images/cta-banner.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+width:100%;
+padding:60px 20px;
+text-align:center;
+}
+
+.offerss h3{
+color:black;
+font-size:28px;
+font-weight:700;
+}
+
+.offerss h4{
+color:#e74c3c;
+font-size:18px;
+margin-bottom:10px;
+}
+
+/* BRAND SLIDER */
+
+.brand-slider{
+overflow:hidden;
+position:relative;
+}
+
+.brand-track{
+display:flex;
+gap:60px;
+animation:scrollBrand 25s linear infinite;
+align-items:center;
+}
+
+.brand-track img{
+height:50px;
+opacity:0.6;
+}
+
+@keyframes scrollBrand{
+0%{
+transform:translateX(100%);
+}
+100%{
+transform:translateX(-100%);
+}
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+.about-header h1{
+font-size:28px;
+}
+
+.about-header p{
+font-size:14px;
+}
+
+.offerss{
+padding:50px 15px;
+}
+
+.offerss h3{
+font-size:22px;
+}
+
+.brand-track{
+gap:30px;
+}
+
+.brand-track img{
+height:40px;
+}
+
+.stat-box{
+margin-bottom:20px;
+}
+
+.team-card img{
+width:120px;
+}
+
+}
+/* blog */
+.team-card:hover {
+background-color:#3498db;
+cursor: pointer;
+}
+.stat-box:hover{
+  background-color:#00c3ff;
+}
+.stat-box p{
+color: #222;
+}
+.mission-box:hover{
+  background-color: #3498db;
+}
+.blog-header{
+background:#eaf5ea;
+}
+
+.blog-meta{
+font-size:13px;
+color:#888;
+display:block;
+margin-bottom:5px;
+}
+
+.small-blog img{
+width:90px;
+height:90px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.small-blog h5{
+font-size:16px;
+font-weight:600;
+}
+
+.explore{
+color:#27ae60;
+font-weight:500;
+text-decoration:none;
+}
+
+.featured-blog{
+position:relative;
+border-radius:10px;
+overflow:hidden;
+}
+
+.featured-blog img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.featured-content{
+position:absolute;
+bottom:20px;
+left:20px;
+color:white;
+max-width:80%;
+}
+
+.large-blog{
+background:#f8f8f8;
+padding:25px;
+border-radius:10px;
+}
+
+.author img{
+width:60px;
+height:60px;
+border-radius:50%;
+}
+.small-blog img{
+  width:150px;
+height:150px;
+object-fit:cover;
+border-radius:8px;
+}
+.featured-blog h3{
+  color: #111;
+}
+.featured-blog span{
+  color: #e66d00;
+}
+
+/* ===== GENERAL FIX ===== */
+
+.small-blog{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.small-blog img{
+width:150px;
+height:150px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.small-blog h5{
+font-size:16px;
+font-weight:600;
+}
+
+.blog-header{
+background:#eaf5ea;
+}
+
+.blog-meta{
+font-size:13px;
+color:#888;
+display:block;
+margin-bottom:5px;
+}
+
+/* ===== FEATURED BLOG ===== */
+
+.featured-blog{
+position:relative;
+border-radius:10px;
+overflow:hidden;
+}
+
+.featured-blog img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.featured-content{
+position:absolute;
+bottom:20px;
+left:20px;
+color:white;
+max-width:80%;
+}
+
+.featured-blog span{
+color:#e66d00;
+}
+
+.featured-blog h3{
+color:#111;
+font-size:24px;
+}
+
+/* ===== LARGE BLOG ===== */
+
+.large-blog{
+background:#f8f8f8;
+padding:25px;
+border-radius:10px;
+}
+
+.author img{
+width:60px;
+height:60px;
+border-radius:50%;
+}
+
+/* ===== HOVER EFFECTS ===== */
+
+.team-card:hover{
+background-color:#3498db;
+cursor:pointer;
+}
+
+.stat-box:hover{
+background-color:#00c3ff;
+}
+
+.mission-box:hover{
+background-color:#3498db;
+}
+
+/* ===== RECENT POST ===== */
+
+.post-card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.post-card:hover{
+transform:translateY(-6px);
+}
+
+.post-content{
+padding:20px;
+}
+
+.post-meta{
+display:flex;
+justify-content:space-between;
+font-size:13px;
+color:#888;
+margin-bottom:10px;
+}
+
+.explore-btn{
+background:#27ae60;
+border:none;
+padding:8px 18px;
+color:white;
+border-radius:5px;
+}
+
+/* ===== TABLET RESPONSIVE ===== */
+
+@media (max-width:992px){
+
+.featured-blog h3{
+font-size:20px;
+}
+
+.small-blog img{
+width:120px;
+height:120px;
+}
+
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width:768px){
+
+.blog-header h1{
+font-size:28px;
+}
+
+.blog-header p{
+font-size:14px;
+}
+
+/* small blogs stack */
+.small-blog{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.small-blog img{
+width:100%;
+height:auto;
+}
+
+/* featured blog text */
+.featured-content{
+bottom:15px;
+left:15px;
+max-width:90%;
+}
+
+.featured-blog h3{
+font-size:18px;
+}
+
+/* large blog stack */
+.large-blog .row{
+flex-direction:column;
+}
+
+/* post cards spacing */
+.post-card{
+margin-bottom:20px;
+}
+
+}
+
+/* ===== SMALL MOBILE ===== */
+
+@media (max-width:480px){
+
+.featured-blog h3{
+font-size:16px;
+}
+
+.post-title{
+font-size:24px;
+}
+
+.post-desc{
+font-size:14px;
+}
+
+.explore-btn{
+padding:6px 14px;
+font-size:14px;
+}
+
+}
+/* accont */
+.account-section{
+background:#f5f5f5;
+}
+
+.account-top{
+background:white;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.user-avatar{
+width:100px;
+height:100px;
+background:#ddd;
+border-radius:50%;
+margin:auto;
+}
+
+.user-name{
+font-weight:600;
+}
+
+.user-info{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+font-size:14px;
+color:#777;
+}
+
+.user-info svg{
+margin-right:5px;
+}
+
+/* STAT BOX */
+
+.stat-box{
+display:flex;
+align-items:center;
+gap:10px;
+background:#f8f8f8;
+padding:12px;
+border-radius:8px;
+transition:0.3s;
+}
+
+.stat-box svg{
+font-size:22px;
+color:#27ae60;
+}
+
+.stat-box:hover{
+background:#eaf8ef;
+}
+
+/* MENU */
+
+.account-menu{
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+.account-menu ul{
+list-style:none;
+padding:0;
+margin-top:10px;
+}
+
+.account-menu li{
+padding:10px 0;
+border-bottom:1px solid #eee;
+cursor:pointer;
+display:flex;
+align-items:center;
+gap:10px;
+font-size:14px;
+}
+
+.account-menu li:hover{
+color:#27ae60;
+}
+
+/* ADDRESS */
+
+.address-box{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.05);
+}
+
+.address-box h6{
+color:#888;
+font-size:13px;
+margin-bottom:10px;
+}
+@media(max-width:992px){
+
+.user-info{
+flex-direction:column;
+gap:5px;
+}
+
+.stat-box{
+flex-direction:column;
+text-align:center;
+}
+
+}
+
+@media(max-width:768px){
+
+.account-menu{
+margin-bottom:20px;
+}
+
+.user-avatar{
+width:80px;
+height:80px;
+}
+
+.stat-box{
+padding:10px;
+}
+
+}
+
+@media(max-width:480px){
+
+.user-name{
+font-size:18px;
+}
+
+.stat-box h5{
+font-size:16px;
+}
+
+.stat-box p{
+font-size:12px;
+}
+
 }

@@ -5,6 +5,11 @@ import { Routes, Route } from "react-router-dom";
 import preloader from "./preloader.gif";
 import Footer from "./components/Footer";
 import Shop from "./pages/shop";
+import AboutUs from "./pages/Aboutus";
+import BlogGrid from "./pages/BlogGrid";
+import MyAccount from "./pages/myaccount";
+
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -29,10 +34,12 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products" element={<h1>Products Page</h1>} />
-        <Route path="/blog" element={<h1>Blog Page</h1>} />
-        <Route path="/pages" element={<h1>Pages Page</h1>} />
          <Route path="/shop" element={<Shop/>} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/blog" element={<BlogGrid />} />
+          <Route path="/myaccount" element={<MyAccount/>} />
+          
+
       </Routes>
       <Footer />
     </>
