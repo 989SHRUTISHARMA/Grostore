@@ -30,7 +30,6 @@ import {
 } from "react-icons/fa";
 
 function Navbar() {
-
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -40,7 +39,7 @@ function Navbar() {
         <div className="top-bar container">
           <div className="text-white fw-bold">Welcome to Our Organic Store</div>
           <div className="right-info">
-            <span className="text-white fw- semi-bold top-divider">
+            <span className="text-white fw-semibold top-divider">
               <CgMail className="me-2 fs-4 " />
               chakrabortyshubhjeet@gmail.com
             </span>
@@ -90,24 +89,26 @@ function Navbar() {
       {/* WHITE NAVBAR */}
       <div className="navbar-box">
         <div className="container navbar-inner">
-
           {/* LOGO */}
           <Link to="/">
             <img src="/images/logo.png" alt="logo" className="navbar-logo" />
           </Link>
 
           {/* MOBILE MENU BUTTON */}
-          <div className="mobile-menu-btn" onClick={() => setMenuOpen(true)}>
+          <div
+            className="mobile-menu-btn"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
             <FaBars />
           </div>
 
           {/* MENU */}
           <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>
-
             {/* CLOSE BUTTON */}
-            <div className="mobile-close" onClick={() => setMenuOpen(false)}>
+
+            <li className="mobile-close" onClick={() => setMenuOpen(false)}>
               <IoClose />
-            </div>
+            </li>
 
             {/* BROWSE CATEGORY */}
             <li className="mega-parent">
@@ -177,7 +178,7 @@ function Navbar() {
             <li className="dropdown">
               Products ▾
               <div className="dropdown-menu-custom">
-                <Link to="#">Shop Grid</Link>
+                <Link to="/shop">Shop Grid</Link>
                 <Link to="#">Shop Grid V2</Link>
                 <Link to="#">Product Details</Link>
               </div>
@@ -220,7 +221,7 @@ function Navbar() {
             </li>
           </ul>
 
-          <div className="nav-icons fs-4 ">
+          <div className="nav-icons fs-4  d-flex align-items-center ">
             <CiSearch className="icons mx-2" />
             <div className="user-dropdown-container">
               <CiUser className="icons mx-4" />
@@ -255,16 +256,12 @@ function Navbar() {
               <BsGrid3X3GapFill />
             </div>
           </div>
-
         </div>
       </div>
 
       {/* OVERLAY */}
       {menuOpen && (
-        <div
-          className="menu-overlay"
-          onClick={() => setMenuOpen(false)}
-        ></div>
+        <div className="menu-overlay" onClick={() => setMenuOpen(false)}></div>
       )}
     </>
   );

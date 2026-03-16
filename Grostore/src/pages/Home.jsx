@@ -1,8 +1,9 @@
-import React from "react";
+// import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination, Autoplay } from "swiper/modules";
 import { FaStar, FaHeart, FaSyncAlt } from "react-icons/fa";
-import { useState } from "react";
+// import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   FaYoutube,
   FaLinkedinIn,
@@ -59,7 +60,7 @@ function Hero() {
 
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-lg-6">
+          <div className="col-lg-6 ">
             <div className="genuine-wrapper">
               <img
                 src="/images/hero-circle-sm.png"
@@ -110,28 +111,54 @@ function Hero() {
 // Swiper wrapper
 export default function Home() {
   const [active, setActive] = useState("all");
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <>
-      <Swiper
-        direction="vertical"
-        slidesPerView={1}
-        spaceBetween={30}
-        // mousewheel={true}
-        pagination={{ clickable: true }}
-        modules={[Pagination]}
-        className="mySwiper"
-        speed={800}
-      >
-        <SwiperSlide>
-          <Hero />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Hero />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Hero />
-        </SwiperSlide>
-      </Swiper>
+      {isMobile ? (
+        <Hero />
+      ) : (
+        <Swiper
+          direction="vertical"
+          slidesPerView={1}
+          spaceBetween={30}
+          pagination={{ clickable: true }}
+          // mousewheel={true}
+          modules={[Pagination]}
+          className="mySwiper"
+          speed={800}
+          breakpoints={{
+            0: {
+              allowTouchMove: false, // mobile me swipe off
+              mousewheel: false,
+            },
+            992: {
+              allowTouchMove: true, // desktop me swipe on
+              mousewheel: true,
+            },
+          }}
+        >
+          <SwiperSlide>
+            <Hero />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Hero />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Hero />
+          </SwiperSlide>
+        </Swiper>
+      )}
       {/*  ===== OUR TOP CATEGORY SECTION ===== */}
       <section className="top-category-section">
         <h2 className="section-title">Our Top Category</h2>
@@ -958,6 +985,7 @@ export default function Home() {
           </Swiper>
         </div>
       </section>
+      {/* product-3 */}
       <section className="product-section">
         <div className="container">
           <div className="product-grid">
