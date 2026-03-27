@@ -1086,6 +1086,8 @@ section {
   font-size: 18px;
   color: #1f2430;
   cursor: pointer;
+  position:relative;
+  right:25px;
   transition: 0.3s ease;
 }
 
@@ -1100,6 +1102,8 @@ section {
   height: 60px;
   background: #1f2430;
   margin: 10px 0;
+  position: relative;
+  right:25px;
 }
 
 /* Follow Text */
@@ -1110,6 +1114,8 @@ section {
   font-weight: 500;
   color: #111;
   letter-spacing: 3px;
+  position: relative;
+  right:25px;
   text-transform: uppercase;
 }
 .mango-wrapper {
@@ -2271,6 +2277,23 @@ body {
 @media (max-width: 768px) {
   .brand-poster {
     flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+.brandimgs{
+  max-width: 90%;
+  height:auto;
+  position: relative;
+  left:15px;
+
+  
+}
+  .imgs2 {
+    width: 100%;
+    max-width: 90%;            
+    height: auto;
+    margin: 0 auto;           
+    display: block;
   }
 }
 .clients-section {
